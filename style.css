@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: calc(50vw - 570px);
+    padding-right: calc(50vw - 570px);
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #5f9ea0;
+}
+
+.btn-cart,
+.by-btn {
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #3f6869;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
