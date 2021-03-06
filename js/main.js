@@ -18,12 +18,9 @@ const products = [{
         title: 'Gamepad',
         price: 4500
     },
-    {
-        id: 4,
-        title: 'Gamepad',
-        price: 4500
-    },
+
 ];
+
 
 const renderProduct = (title = "title", price = "price") => {
     return `<div class="product-item">
@@ -43,3 +40,15 @@ const renderProducts = (list) => {
 }
 
 renderProducts(products);
+
+let btnSumm = document.getElementById("summ");
+btnSumm.addEventListener("click", summProducts);
+let summ = null;
+let inputSumm = document.getElementById("inputText");
+
+function summProducts() {
+    for (let i = 0; i < products.length; i++) {
+        summ += products[i].price;
+    }
+    inputSumm.innerHTML = summ;
+};
